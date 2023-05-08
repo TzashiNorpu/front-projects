@@ -6,7 +6,7 @@ const WelcomePage: React.FC = () => {
   return (
     <PageContainer ghost>
       <div className={styles.container}>
-        <PageA {...{foo:{ownerId:'333'}}} />
+        <PageA ownerId={'333'}  />
       </div>
     </PageContainer>
   );

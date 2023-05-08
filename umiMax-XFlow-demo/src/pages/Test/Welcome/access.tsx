@@ -1,9 +1,11 @@
 import {useAccess,Access } from "@umijs/max";
+import { Foo } from "typings";
 
  
-const PageA = (props) => {
-  const { foo } = props;
+const PageA = (props:Foo) => {
+  const { ownerId } = props;
   const access = useAccess();
+  return (
   <>
     <Access
       accessible={access.canReadFoo}
@@ -20,12 +22,13 @@ const PageA = (props) => {
     </Access>
     
     <Access
-      accessible={access.canDeleteFoo(foo)}
+      accessible={access.canDeleteFoo(ownerId)}
       fallback={<div>Can not delete foo.</div>}
     >
       Delete foo.
     </Access>
     </>
+  );
 };
  
 export default PageA;

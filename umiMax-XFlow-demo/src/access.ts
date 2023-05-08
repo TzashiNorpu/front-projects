@@ -1,4 +1,6 @@
-export default (initialState) => {
+import { Foo, User } from "typings";
+
+export default (initialState:User) => {
   // 在这里按照初始化数据定义项目中的权限，统一管理
   // 参考文档 https://umijs.org/docs/max/access
   /* const canSeeAdmin = !!(
@@ -13,8 +15,8 @@ export default (initialState) => {
   return {
     canReadFoo: true,
     canUpdateFoo: role === 'admin',
-    canDeleteFoo: (foo) => {
-      return foo.ownerId === userId;
+    canDeleteFoo: (ownerId:string) => {
+      return ownerId === userId;
     },
   };
 };

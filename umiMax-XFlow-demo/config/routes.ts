@@ -26,9 +26,9 @@ export const routes = [
         {
           name: '欢迎',
           path: '/test/welcome',
-          icon: 'HomeTwoTone',
           component:'./Test/Welcome',
-        },
+          icon: 'HomeTwoTone',
+        }
       ],
     },
   ]
