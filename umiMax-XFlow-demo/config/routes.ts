@@ -22,6 +22,7 @@ export const routes = [
     {
       name: ' 测试',
       path: '/test',
+      icon:'HomeTwoTone',
       routes: [
         {
           name: '欢迎',

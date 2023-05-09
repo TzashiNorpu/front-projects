@@ -11,5 +11,4 @@ export default defineConfig({
   npmClient: 'pnpm',
   layout: layout,
   routes:routes
-  
 });

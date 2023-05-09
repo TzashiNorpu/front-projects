@@ -1,12 +1,12 @@
+import XFlowDemo from '@/compnent/XFlow/solutions/flow/demos';
 import '@antv/xflow/dist/index.css';
 import 'antd/dist/antd.css';
-import XFlowDemo from './demos';
 
-export default function XFlowFlowComponent() {
+export default function App(){
   return (
-    <div style={{height:800}}>
+    <div>
       <XFlowDemo meta={{
-        flowId: '112'
+        flowId: '5555'
       }} />
     </div>
   );
